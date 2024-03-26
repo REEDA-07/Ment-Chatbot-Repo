@@ -108,12 +108,12 @@ import csv
 files = 'history.txt'
 try:
     with open(files, encoding='utf-8-sig') as f:
-        reader = csv.reader(f)
-        data_hist = list(reader)
+        readerr = csv.reader(f)
+        data_hist = list(readerr)
 except UnicodeDecodeError:
     with open(files, encoding='latin-1') as f:
-        reader = csv.reader(f)
-        data_hist = list(reader)
+        readerr = csv.reader(f)
+        data_hist = list(readerr)
         
 history = pd.DataFrame(data_hist)
 st.sidebar.subheader('Chat History', divider=True)
