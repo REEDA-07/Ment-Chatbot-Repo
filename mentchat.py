@@ -118,9 +118,9 @@ except UnicodeDecodeError:
 history = pd.DataFrame(data_hist)
 st.sidebar.subheader('Chat History', divider=True)
 st.sidebar.write(history)
-history = pd.Series(data)
-st.sidebar.subheader('Chat History', divider = True)
-st.sidebar.write(history)
+# history = pd.Series(data)
+# st.sidebar.subheader('Chat History', divider = True)
+# st.sidebar.write(history)
 
 st.header('Project Background Information', divider = True)
 st.write("The objectives of a mental health chatbot include providing supportive conversations, offering immediate assistance in crisis situations, normalizing mental health discussions, assessing and monitoring mental health, providing psychoeducation and coping strategies, facilitating access to resources, maintaining user privacy, continuously improving through feedback, and collaborating with mental health professionals to enhance support effectiveness.")
