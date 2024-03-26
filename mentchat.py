@@ -12,6 +12,7 @@ nltk.download('stopwords')
 nltk.download('punkt')
 nltk.download('wordnet')
 
+with open('Mental_Health_FAQ.csv', 'r', encoding='utf-8', errors='ignore') as file:
 hist_list = []
 
 data = pd.read_csv('Mental_Health_FAQ.csv')
