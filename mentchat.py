@@ -95,28 +95,27 @@ with chat_response:
         chat_response.write(f"\nChatbot: {response}")
 
  # history starting 
-        hist_list = ([])
-        hist_list.append(user_word)
+ #        hist_list.append(user_word)
 
-# Save the history of the texts 
-with open('history.txt', 'a') as file:
-        for item in hist_list:
-            file.write(str(item) + '\n')
-            file.write(response)    
+# # Save the history of the texts 
+# with open('history.txt', 'a') as file:
+#         for item in hist_list:
+#             file.write(str(item) + '\n')
+#             file.write(response)    
 
-import csv
-files = 'history.txt'
-with open(files) as f:
-  reader = csv.reader(f)
-  data = list(reader)
+# import csv
+# files = 'history.txt'
+# with open(files) as f:
+#   reader = csv.reader(f)
+#   data = list(reader)
 
-history = pd.Series(data)
-st.sidebar.subheader('Chat History', divider = True)
-st.sidebar.write(history)
+# history = pd.Series(data)
+# st.sidebar.subheader('Chat History', divider = True)
+# st.sidebar.write(history)
 
-st.header('Project Background Information', divider = True)
-st.write("The objectives of a mental health chatbot include providing supportive conversations, offering immediate assistance in crisis situations, normalizing mental health discussions, assessing and monitoring mental health, providing psychoeducation and coping strategies, facilitating access to resources, maintaining user privacy, continuously improving through feedback, and collaborating with mental health professionals to enhance support effectiveness.")
+# st.header('Project Background Information', divider = True)
+# st.write("The objectives of a mental health chatbot include providing supportive conversations, offering immediate assistance in crisis situations, normalizing mental health discussions, assessing and monitoring mental health, providing psychoeducation and coping strategies, facilitating access to resources, maintaining user privacy, continuously improving through feedback, and collaborating with mental health professionals to enhance support effectiveness.")
 
-st.markdown("<br>", unsafe_allow_html= True)
-st.markdown("<br>", unsafe_allow_html= True)
+# st.markdown("<br>", unsafe_allow_html= True)
+# st.markdown("<br>", unsafe_allow_html= True)
 
